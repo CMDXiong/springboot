@@ -49,3 +49,15 @@ sprintboot有两种配置文件：
       - -Dspring.profiles.active=test1
     - 命令行参数 
       - java -jar xxx.jar --spring.profiles.active=pro1
+
+## 1.4 内部配置加载顺序
+Springboot程序启动时，从以下位置加载配置文件，优先级顺序如下：
+1. file: `./config/`: 当前项目下的/config目录下
+2. file: `./ `: 当前项目的根目录
+3. classpath:`./config/`: classpath的config目录
+4. classpath:`./`: classpath的根目录
+
+高优先级会覆盖低优先级的相同属性
+
+## 1.5 外部配置加载顺序
+https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.external-config
