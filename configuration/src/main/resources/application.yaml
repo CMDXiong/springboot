@@ -1,0 +1,15 @@
+server:
+  address: 127.0.0.1
+  port: 8084
+
+name: px_cmd
+
+person:
+  name: ${name}
+  age: 20
+
+
+address:
+  - Beijing
+  - ShangHai
+
